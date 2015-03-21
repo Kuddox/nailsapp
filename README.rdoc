@@ -1,3 +1,3 @@
 Nancy's Nails and Hair
 
-I am building a website for my mom and her nail salon, in hopes of taking over for all nail salons starting from the West Coast. Even the website for the best nail salon in New York is non-responsive and un-scalable!
+I am building a website for my mom and her nail salon, as a birthday present. If you know my mom (Nancy) and her nail salon in Utah, please do not say anything to her. =)
