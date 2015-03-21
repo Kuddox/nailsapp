@@ -1,3 +1,3 @@
 Nancy's Nails and Hair
 
-I am building a website for my mom and her nail salon, in hopes of taking over for all nail salons starting from the West Coast. Even the best nail salon in New York is non-responsive!
+I am building a website for my mom and her nail salon, in hopes of taking over for all nail salons starting from the West Coast. Even the website for the best nail salon in New York is non-responsive and un-scalable!
