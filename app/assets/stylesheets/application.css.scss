@@ -11,9 +11,16 @@
  * file per style scope.
  *
  */
+
+/* 
+ * =require sprockets-octicons
+ */
+
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+
 
 .jumbotron {
   margin-bottom: 0px;
@@ -23,9 +30,16 @@
   background-repeat: no-repeat;
   
   text-shadow: gray 0.3em 0.3em 0.3em;
-  padding: 250px;
+  text-align: center;
+  
 }
 
 .container {
 	color: #800020;
+	text-align: center;
+	padding-top: 75px;
+}
+
+.glyphicon, .mega-octicon {
+	font-size: 40px;
 }
