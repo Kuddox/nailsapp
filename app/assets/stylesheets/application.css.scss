@@ -29,15 +29,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   
-  text-shadow: gray 0.3em 0.3em 0.3em;
+  text-shadow: gray 0.2em 0.2em 0.2em;
   text-align: center;
   
+  font-family: cursive;
+  border-color: black;
 }
 
 .container {
 	color: #800020;
 	text-align: center;
 	padding-top: 75px;
+	text-align: center;
+	font-family: cursive;
 }
 
 .glyphicon, .mega-octicon {
