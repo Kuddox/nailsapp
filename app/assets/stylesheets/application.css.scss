@@ -15,10 +15,17 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.body {
-	background-image: url("frenchtip.png");
+.jumbotron {
+  margin-bottom: 0px;
+  background-image: url("../assets/images/Nancy1.png");
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  text-shadow: gray 0.3em 0.3em 0.3em;
+  padding: 250px;
 }
 
-.jumbotron {
-	text-color: #8C001A;
+.container {
+	color: #800020;
 }
