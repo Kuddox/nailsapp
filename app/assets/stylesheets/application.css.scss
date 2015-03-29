@@ -21,23 +21,32 @@
 @import "bootstrap";
 
 
+/* vietnamese */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(http://fonts.gstatic.com/s/opensans/v10/59ZRklaO5bWGqF5A9baEEZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+1EA0-1EF1, U+20AB;
+}
 
 .jumbotron {
   margin-bottom: 0px;
-  background-image: url("../assets/images/Nancy1.png");
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
   
-  text-shadow: gray 0.3em 0.3em 0.3em;
+  text-shadow: gray 0.2em 0.2em 0.2em;
   text-align: center;
   
+  font-family: cursive;
 }
 
 .container {
 	color: #800020;
 	text-align: center;
-	padding-top: 75px;
+	padding-top: 100px;
+	font-family: cursive;
 }
 
 .glyphicon, .mega-octicon {
