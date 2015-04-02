@@ -32,7 +32,6 @@
 
 .jumbotron {
   margin-bottom: 0px;
-  background-image: url("../assets/images/Nancy1.png");
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,15 +40,19 @@
   text-align: center;
   
   font-family: cursive;
-  border-color: black;
 }
 
 .container {
 	color: #800020;
 	text-align: center;
+<<<<<<< HEAD
 	padding-top: 75px;
 	text-align: center;
 	font-family: cursive, sans-serif;
+=======
+	padding-top: 100px;
+	font-family: cursive;
+>>>>>>> 94b4df34694d61f82702dcbe4d4b840b9c80e3f6
 }
 
 .glyphicon, .mega-octicon {
