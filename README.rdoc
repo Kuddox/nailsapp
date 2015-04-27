@@ -1,3 +1,5 @@
 Nancy's Nails and Hair
 
-I am building a website for my mom and her nail salon, as a birthday present. If you know my mom (Nancy) and her nail salon in Utah, please do not say anything to her. =)
+Includes:
+Price List Modal 
+Bootstrap (container, glyphs, jumbotron)
