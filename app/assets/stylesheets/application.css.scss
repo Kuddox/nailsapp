@@ -42,6 +42,11 @@
   font-family: cursive;
 }
 
+.btn-primary {
+	background-color: #800020;
+	border-color: #800020;
+}
+
 .container {
 	color: #800020;
 	text-align: center;
@@ -49,6 +54,14 @@
 	font-family: cursive, sans-serif;
 }
 
+.fa {
+	font-size: 40px;
+}
+
 .glyphicon, .mega-octicon {
 	font-size: 40px;
+}
+
+.modal-content {
+	text-align: left;
 }
