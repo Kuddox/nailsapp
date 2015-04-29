@@ -32,15 +32,16 @@
 
 .jumbotron {
   margin-bottom: 0px;
-  padding: 110px 0px;
+  padding: 115px 0px;
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
+  border-color: #800020;
   
   text-shadow: gray 0.2em 0.2em 0.2em;
   text-align: center;
   
-  font-family: cursive;
+  font-family: cursive, candara, sans-serif;
 }
 
 .btn-primary {
@@ -67,3 +68,24 @@
 	text-align: center;
 }
 
+.thead .tr .th {
+
+}
+
+.glyphicon-thumbs-up { 
+	cursor:pointer 
+}
+
+/*Angular modal list*/
+table, th , td  {
+  border: 1px solid grey;
+  border-collapse: collapse;
+  padding: 5px;
+}
+table tr:nth-child(odd)	{
+  background-color: #800020;
+  color: white;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}

@@ -4,8 +4,8 @@
   <head>
     <title><%= yield(:title) %> | Nancy's Nails & Hair</title>
   </head>
-  <body>
-  	<div class="jumbotron">
+  <body ng-app="Nancys" ng-controller="NailCtrl">
+  	<div class="jumbotron"> 
   		<div class="container">
   			<div class="page-header">
   				<div class="row">
@@ -46,7 +46,7 @@
 				<div class="col-sm-4">
 					<span class="fa fa-angellist"></span>
 					<h3>Jobs</h3>
-					<p>Booth rent available for hair stylist!</p>
+					<p>Booth rent available for hair stylist! Call Nancy for more details.</p>
 				</div>
 			</div>
 		</div>
@@ -60,18 +60,17 @@
 				<div class="col-sm-4">
 					<!-- Small modal -->
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
-						<span class="fa fa-paint-brush"></span>
+						<span class="fa fa-list-alt"></span>
 					</button>
 						<h3>Nail Services</h3>
 					<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 		  			<div class="modal-dialog modal-sm">
 		    			<div class="modal-content">
 		    				<h2>Price List</h2>
+		    				<small>This is a sample price list.</small>
 		    				<table class="table table-condensed">
 		    					<thead>
 		    						<tr>
-		    							<th>Services</th>
-		    							<th>USD</th>
 		    						</tr>
 		    					</thead>
 		    					<tbody>
@@ -92,15 +91,15 @@
 		    							<td></td>
 		    						</tr>
 		    						<tr>
-		    							<td>Full Set</td>
+		    							<td>-Full Set-</td>
 		    							<td>$22</td>
 		    						</tr>
 		    						<tr>
-		    							<td>-Refill</td>
+		    							<td>-Refill-</td>
 		    							<td>$17</td>
 		    						</tr>		    						
 		    						<tr>
-		    							<td>-Repairs</td>
+		    							<td>-Repairs-</td>
 		    							<td>$4</td>
 		    						</tr>
 		    					</tbody>
@@ -114,7 +113,9 @@
 					<h3>Thirsty?</h3> 
 					<p>Show off your nails at nearby local bars and clubs!</p>
 					<ul style="list-style-type:none">
-						<li><a href="http://www.theroyalslc.com">The Royal</a></li>
+						<li>
+							<a href="http://www.theroyalslc.com">The Royal</a>
+						</li>
 						<li>The Leprechaun Inn</li>
 					</ul>
 				</div>
@@ -123,8 +124,16 @@
 		<div class="container">
 			<div class="row-sm-12">
 				<h3>Reviews (coming soon)</h3>
-			</div>
-		</div>
+				<div ng-repeat="post in posts | orderBy: '-upvotes'">
+					<span ng-click="incrementUpvotes(post)">^</span>
+					{{post.title}} - upvotes: {{post.upvotes}}
+				</div>
+				<form ng-submit="addPost()">
+					<input type="text" ng-model="title"></input>
+					<button type="submit">Reviews</button>
+				</form>
+			</div> <!-- closing row-sm-12 -->
+		</div> <!-- closing container -->
 		<div class="footer">
 			<div class="container">
 				<p>Nancy's Nails & Hair © 2015</p>
