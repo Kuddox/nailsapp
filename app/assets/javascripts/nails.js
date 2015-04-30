@@ -1,5 +1,3 @@
-//= require_tree .
-
 angular.module('Nancys', [])
 .controller('NailCtrl', [
 	'$scope',
