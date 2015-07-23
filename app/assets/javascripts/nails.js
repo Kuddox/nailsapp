@@ -24,5 +24,7 @@ angular.module('Nancys', [])
 		$scope.incrementDownvotes = function(post) {
 			post.downvotes -= 1;
 		};
+		$scope.priceList
+		$scope.addReview
 	}])
 
