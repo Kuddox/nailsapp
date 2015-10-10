@@ -25,8 +25,7 @@
 				<div class="col-sm-4">
 					<span class="glyphicon glyphicon-heart-empty"></span>
 					<h3>About Nancy</h3>
-					<p>Nancy is prideful in her work and technique. Thoroughly trained in Southern California (US Nails), she provides beautiful, long lasting nails and happy clients!</p>
-					<p></p>
+					<p>Nancy is prideful in her work and technique. Thoroughly trained in Southern California (US Nails), she provides beautiful, long lasting nails and happy clients!</p>		
 				</div>
 				<div class="col-sm-4">
 					<span class="glyphicon glyphicon-phone-alt"></span>
@@ -44,9 +43,19 @@
 					</p>
 				</div>
 				<div class="col-sm-4">
-					<span class="fa fa-angellist"></span>
+					<!-- Small modal -->
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".JobForm">
+						<span class="fa fa-angellist"></span>
+					</button>
 					<h3>Jobs</h3>
-					<p>Booth rent available for hair stylist! Call Nancy for more details.</p>
+					<p>Booth rent available for hair stylist and nail technician! Call Nancy for more details.</p>
+					<div class="modal fade JobForm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalForm" aria-hidden="true">
+						<div class="modal-dialog modal-sm">
+							<div class="modal-content">
+								<%= render 'layouts/jobform' %>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -59,58 +68,14 @@
 				</div>
 				<div class="col-sm-4">
 					<!-- Small modal -->
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">
+					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".PriceList">
 						<span class="fa fa-list-alt"></span>
 					</button>
-						<h3>Nail Services</h3>
-					<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+					<h3>Nail Services</h3>
+					<div class="modal fade PriceList" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
 		  			<div class="modal-dialog modal-sm">
 		    			<div class="modal-content">
-		    				<h2>Price List</h2>
-		    				<table class="table table-condensed">
-		    					<thead>
-		    						<tr>
-		    						</tr>
-		    					</thead>
-		    					<tbody>
-		    						<tr>
-		    							<td>Shellac</td>
-		    							<td>$15</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Fill</td>
-		    							<td>$24</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Full Set</td>
-		    							<td>$35</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Back Fill</td>
-		    							<td>$38</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Manicure</td>
-		    							<td>$15</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Pedicure</td>
-		    							<td>$30</td>
-		    						</tr>		    						
-		    						<tr>
-		    							<td>Toe Nails Clip</td>
-		    							<td>$12</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Nails Clip</td>
-		    							<td>$7</td>
-		    						</tr>
-		    						<tr>
-		    							<td>Soak Off</td>
-		    							<td>$12</td>
-		    						</tr>
-		    					</tbody>
-		    				</table>
+		    				<%= render 'layouts/pricelist' %>
 		    			</div>
 		  			</div>
 					</div>
