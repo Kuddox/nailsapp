@@ -1,12 +1,32 @@
 Rails.application.routes.draw do
+	resources :photos, only: [:new, :create, :index, :destroy]
 
   root 'static_pages#home'
 
   get '/about', to: 'static_pages#about', as: :about
   get '/contact', to: 'static_pages#contact', as: :contact
+  get '/index', to: 'photos#index', as: :index
   
   get 'static_pages/about'
   get 'static_pages/contact'
+
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -62,4 +82,4 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+
