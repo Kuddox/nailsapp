@@ -26,8 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 
 gem 'bootstrap-sass', '~> 3.3.4'
-gem 'paperclip'
-
+gem 'paperclip', git: "git://github.com/thoughtbot/paperclip.git"
+gem 'aws-sdk', '~> 2'
 
 
 group :development, :test do
